@@ -19,6 +19,14 @@ header {
   margin: 4em;
 }
 
+header img {
+  height: 4em;
+}
+
+header h1 {
+  color: #fa8072;
+}
+
 main {
   margin: 0 auto;
 }
@@ -31,6 +39,8 @@ main .key {
   border-radius: 0.25em;
   width: 4em;
   transition: 0.1s;
+  color: #ffffff;
+  background: #000000;
 }
 
 main .key-playing {
@@ -49,6 +59,7 @@ main .key kbd {
 main .key span {
   font-weight: 500;
   font-size: 0.85em;
+  color: #fa8072;
 }
 
 footer {
@@ -75,4 +86,29 @@ footer a {
 
 footer a:hover {
   border-bottom: 0.25em solid #ffffff;
+}
+
+@media (max-width: 766px) {
+  header {
+    margin: 2em;
+  }
+
+  main .key {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 3.25em;
+  }
+
+  main .key kbd {
+    font-size: 1.25em;
+    padding: 0.25em 0;
+  }
+
+  main .key span {
+    font-size: 0.7em;
+  }
+
+  footer {
+    padding: 1em 0;
+  }
 }
