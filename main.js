@@ -11,6 +11,7 @@ function playAudio(e) {
 
   key.classList.add("key-playing");
 }
+
 window.addEventListener("keydown", playAudio);
 
 function removeTransition(e) {
