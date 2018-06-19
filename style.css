@@ -1,0 +1,78 @@
+:root {
+  --main-font: "montserrat", sans-serif;
+  --drum-font: "open sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  height: 100%;
+  text-align: center;
+}
+
+header {
+  margin: 4em;
+}
+
+main {
+  margin: 0 auto;
+}
+
+main .key {
+  display: inline-block;
+  padding: 1em;
+  margin: 0.5em;
+  border: 0.25em solid #000000;
+  border-radius: 0.25em;
+  width: 4em;
+  transition: 0.1s;
+}
+
+main .key-playing {
+  transform: scale(1.1);
+  border-color: #fa8072;
+}
+
+main .key kbd {
+  font-family: var(--drum-font);
+  font-weight: 700;
+  display: block;
+  font-size: 1.75em;
+  padding: 0.5em;
+}
+
+main .key span {
+  font-weight: 500;
+  font-size: 0.85em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 4em;
+  padding: 2em 0;
+  background: linear-gradient(to right, salmon, #be2211);
+  width: 100%;
+}
+
+footer p {
+  margin: 1em 0;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+  margin: 0 2em;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  border-bottom: 0.25em solid #ffffff;
+}
