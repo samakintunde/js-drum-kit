@@ -1,4 +1,4 @@
-window.addEventListener("keydown", playAudio)
+window.addEventListener("keydown", playAudio);
 
 function playAudio(e) {
   // To instantiate audio
@@ -14,6 +14,7 @@ function playAudio(e) {
   key.classList.add("key-playing");
 }
 
+// To remove animation on key clicked
 function removeTransition(e) {
   if (e.propertyName !== "transform") return;
   this.classList.remove("key-playing");
